@@ -8,6 +8,16 @@ https://github.com/AdamBremholm/eurekaclient
 https://github.com/AdamBremholm/gatewayzuul
 https://github.com/AdamBremholm/authservice
 
+Alla Docker containers ligger på Dockerhub, men om du vill bygga själv så går det bra från ovan repos. 
+
+Docker build: 
+ > docker build --tag=[SERVICE NAME]:[VERSION] --build-arg JAR_FILE=target/[JAR FILE NAME] .
+ex..
+> docker build --tag=eureka:v.0.0.1 --build-arg JAR_FILE=target/eurekaserver-0.0.1-SNAPSHOT.jar .
+
+Ändra då i docker-compose så att image: är dina egna containers image tags. 
+
+
 Impending TV Bang4Buck 
 
 Körinstruktioner:
