@@ -71,3 +71,6 @@ Det går även att aktivera path för review-app och specs-app i gatewayen, då 
 
 @get
 /specs/televisions/{id}
+
+
+Det går även att testa att scala servicerna. Just nu fungerar detta enbart på authservice eftersom de andra innehåller databaskopplingar. Vill man exempelvis starta tre instanser av authservice kör man docker-compose up --scale authservice=3.
