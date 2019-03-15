@@ -2,30 +2,22 @@ version: '3'
 services:
   gatewayzuul:
     image: flanker27/gatewayzuul
-    container_name: gatewayzuul
     ports:
       - "8080:8080"
 
   authservice:
     image: flanker27/authservice
-    container_name: authservice
 
   eurekaserver:
     image: flanker27/eurekaserver
-    container_name: eurekaserver
     ports:
       - "8761:8761"
 
   reviews:
     image: flanker27/reviews
-    container_name: reviews
 
   axesor:
     image: flanker27/axesor
-    container_name: axesor
 
   televisionspecs:
     image: flanker27/televisionspecs
-    container_name: televisionspecs
-    
-
